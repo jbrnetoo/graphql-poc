@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="GraphQL" Version="7.8.0" />
+    <PackageReference Include="GraphQL.Server.Core" Version="5.2.2" />
+    <PackageReference Include="GraphQL.Server.Transports.AspNetCore.SystemTextJson" Version="5.2.2" />
+    <PackageReference Include="GraphQL.Server.Ui.Playground" Version="7.7.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.2.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Routing" Version="2.2.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GraphQL.Domain\GraphQL.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
