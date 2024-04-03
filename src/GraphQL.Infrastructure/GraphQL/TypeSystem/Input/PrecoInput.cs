@@ -7,8 +7,8 @@ namespace GraphQL.Infrastructure.GraphQL.TypeSystem.Input
     {
         public PrecoInput()
         {
-            Field<NonNullGraphType<DecimalGraphType>>(nameof(Preco.Valor));
-            Field<NonNullGraphType<DecimalGraphType>>(nameof(Preco.DescontoAVista));
+            Field<DecimalGraphType>(nameof(Preco.Valor));
+            Field<DecimalGraphType>(nameof(Preco.DescontoAVista));
         }
     }
 }

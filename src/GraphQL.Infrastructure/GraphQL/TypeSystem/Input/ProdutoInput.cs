@@ -11,8 +11,8 @@ namespace GraphQL.Infrastructure.GraphQL.TypeSystem.Input
             Field<NonNullGraphType<StringGraphType>>(nameof(Produto.Codigo));
             Field<NonNullGraphType<StringGraphType>>(nameof(Produto.Nome));
             Field<NonNullGraphType<StringGraphType>>(nameof(Produto.Descricao));
-            Field<NonNullGraphType<PrecoInput>>(nameof(Produto.Descricao));
-            Field<NonNullGraphType<DepartamentoType>>(nameof(Produto.Descricao));
+            Field<NonNullGraphType<PrecoInput>>(nameof(Produto.Preco));
+            Field<DepartamentoType>("departamento");
         }
     }
 }

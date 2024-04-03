@@ -3,7 +3,7 @@ using GraphQL.Types;
 
 namespace GraphQL.Infrastructure.GraphQL.TypeSystem.Types
 {
-    internal class DepartamentoType : ObjectGraphType<Departamento>
+    internal class DepartamentoType : EnumerationGraphType<Departamento>
     {
     }
 }
