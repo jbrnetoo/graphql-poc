@@ -1,0 +1,25 @@
+name: Continuos Integration
+
+on: 
+  push:
+    branches:
+      - main
+      - develop
+      - 'feature/**'
+
+jobs:
+  continuous-integration:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with: 
+          dotnet-version: 5.0.x
+      - name: Baixar dependencias (restore)
+        run: dotnet restore
+      - name: Buildar aplicacao
+        run: dotnet build --no-restore
+      - name: Testes
+        run: dotnet test --no-build --verbosity normal
+  
